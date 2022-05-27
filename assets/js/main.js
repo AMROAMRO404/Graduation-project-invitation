@@ -77,19 +77,21 @@
 })();
 
 function danger() {
-    let confiramtion = confirm("سمعت انك جاي ؟");
+    let confiramtion = confirm("سمعنا انك جاي ؟");
     if (confiramtion) {
         alert("كفووو، اهلا وسهلا ...");
-    }
+    } else {
+        let i = 1;
+        while (!confiramtion && i) {
+            alert("الله يهديك");
+            confiramtion = confirm("معك كمان فرصة, جاي او لا؟");
+            i--;
+        }
 
-    let i = 1;
-    while (!confiramtion && i) {
-        alert("الله يهديك");
-        confiramtion = confirm("معك كمان فرصة, جاي او لا؟");
-        i--;
-    }
-
-    if (!confiramtion) {
-        alert("انا لو محلك برضه باجيش :)");
+        if (!confiramtion) {
+            alert("انا لو محلك برضه باجيش :)");
+        } else {
+            alert("بتنورنا .. ");
+        }
     }
 }
