@@ -1,5 +1,5 @@
 (function() {
-    "use strict";
+    ("use strict");
 
     /**
      * Easy selector helper function
@@ -49,7 +49,6 @@
         window.addEventListener("load", toggleBacktotop);
         onscroll(document, toggleBacktotop);
     }
-
     /**
      * Countdown timer
      */
@@ -76,3 +75,21 @@
     countDownDate();
     setInterval(countDownDate, 1000);
 })();
+
+function danger() {
+    let confiramtion = confirm("سمعت انك جاي ؟");
+    if (confiramtion) {
+        alert("كفووو، اهلا وسهلا ...");
+    }
+
+    let i = 1;
+    while (!confiramtion && i) {
+        alert("الله يهديك");
+        confiramtion = confirm("معك كمان فرصة, جاي او لا؟");
+        i--;
+    }
+
+    if (!confiramtion) {
+        alert("انا لو محلك برضه باجيش :)");
+    }
+}
